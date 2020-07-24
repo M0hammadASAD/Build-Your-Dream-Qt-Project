@@ -1,5 +1,5 @@
 <h1>
-Hello Everyone 
+Hello Everyone,
 </h1> <br>
 <p> This is the beta version of my first application on Qt named as "Build Your Dream". I tried my best to make this application bug free. However, there could be some
 bugs. I am working for a version update. Hope all the issue should be solved in next update.<br>
