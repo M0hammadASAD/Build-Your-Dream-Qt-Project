@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>con_login</class>
+ <widget class="QDialog" name="con_login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>693</width>
+    <height>667</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Consumer panel</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/img/img/icon.png</normaloff>:/img/img/icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#con_login
+{
+	border-image: url(:/img/img/WsZf3T.jpg);
+}</string>
+  </property>
+  <widget class="QGroupBox" name="loginbox">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>140</y>
+     <width>611</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#loginbox
+{
+font: 14pt &quot;Baskerville Old Face&quot;,rgb(255, 0, 0);
+background-color:rgba(255,255,255,0.5);
+
+}</string>
+   </property>
+   <property name="title">
+    <string>Login</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>581</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="_2" stretch="0,1,0,1,1">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMaximumSize</enum>
+     </property>
+     <property name="topMargin">
+      <number>3</number>
+     </property>
+     <property name="rightMargin">
+      <number>9</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">
+font: 14pt &quot;Baskerville Old Face&quot;,rgb(255, 0, 0);
+</string>
+       </property>
+       <property name="text">
+        <string>Username</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="unlog_line">
+       <property name="styleSheet">
+        <string notr="true">border-radius:4px;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="styleSheet">
+        <string notr="true">
+font: 14pt &quot;Baskerville Old Face&quot;,rgb(255, 0, 0);
+</string>
+       </property>
+       <property name="text">
+        <string>Password</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="passlog_line">
+       <property name="styleSheet">
+        <string notr="true">border-radius:4px;</string>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="login_btn">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#login_btn
+{
+font: 14pt &quot;Baskerville Old Face&quot;;
+background-color: rgb(255, 255, 0);
+border-radius:10px
+}
+#login_btn:hover
+{
+background-color:rgb(85, 255, 0)
+}</string>
+       </property>
+       <property name="text">
+        <string>Login</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="regbox">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>260</y>
+     <width>611</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#regbox
+{
+font: 14pt &quot;Baskerville Old Face&quot;,rgb(255, 0, 0);
+background-color:rgba(255,255,255,0.5);
+
+}</string>
+   </property>
+   <property name="title">
+    <string>Sign Up</string>
+   </property>
+   <widget class="QPushButton" name="reg_btn">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>330</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#reg_btn
+{
+font: 14pt &quot;Baskerville Old Face&quot;;
+background-color: rgb(255, 255, 0);
+border-radius:10px
+}
+#reg_btn:hover
+{
+background-color:rgb(85, 255, 0)
+}</string>
+    </property>
+    <property name="text">
+     <string>Sign Up</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>32</y>
+      <width>121</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="styleSheet">
+        <string notr="true">
+font: 14pt &quot;Baskerville Old Face&quot;,rgb(255, 0, 0);
+</string>
+       </property>
+       <property name="text">
+        <string>Username</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="styleSheet">
+        <string notr="true">
+font: 14pt &quot;Baskerville Old Face&quot;,rgb(255, 0, 0);
+</string>
+       </property>
+       <property name="text">
+        <string>Password</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_8">
+       <property name="styleSheet">
+        <string notr="true">
+font: 14pt &quot;Baskerville Old Face&quot;,rgb(255, 0, 0);
+</string>
+       </property>
+       <property name="text">
+        <string>Full Name</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_9">
+       <property name="styleSheet">
+        <string notr="true">
+font: 14pt &quot;Baskerville Old Face&quot;,rgb(255, 0, 0);
+</string>
+       </property>
+       <property name="text">
+        <string>Email</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_10">
+       <property name="styleSheet">
+        <string notr="true">
+font: 14pt &quot;Baskerville Old Face&quot;,rgb(255, 0, 0);
+</string>
+       </property>
+       <property name="text">
+        <string>Phone No.</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_11">
+       <property name="styleSheet">
+        <string notr="true">
+font: 14pt &quot;Baskerville Old Face&quot;,rgb(255, 0, 0);
+</string>
+       </property>
+       <property name="text">
+        <string>Address</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_12">
+       <property name="styleSheet">
+        <string notr="true">
+font: 14pt &quot;Baskerville Old Face&quot;,rgb(255, 0, 0);
+</string>
+       </property>
+       <property name="text">
+        <string>DOB</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_13">
+       <property name="styleSheet">
+        <string notr="true">
+font: 14pt &quot;Baskerville Old Face&quot;,rgb(255, 0, 0);
+</string>
+       </property>
+       <property name="text">
+        <string>Upload Photo</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>141</x>
+      <y>23</y>
+      <width>461</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLineEdit" name="un">
+       <property name="styleSheet">
+        <string notr="true">border-radius:4px;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="pass">
+       <property name="styleSheet">
+        <string notr="true">border-radius:4px;</string>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="fn">
+       <property name="styleSheet">
+        <string notr="true">border-radius:4px;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="email">
+       <property name="styleSheet">
+        <string notr="true">border-radius:4px;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="phn">
+       <property name="styleSheet">
+        <string notr="true">border-radius:4px;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="add">
+       <property name="styleSheet">
+        <string notr="true">border-radius:4px;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="dob">
+       <property name="styleSheet">
+        <string notr="true">border-radius:4px;</string>
+       </property>
+       <property name="text">
+        <string>DD-MM-YYYY</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>270</y>
+      <width>461</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLineEdit" name="add_2">
+       <property name="styleSheet">
+        <string notr="true">border-radius:4px;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pb">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">#pb
+{
+font: 14pt &quot;Baskerville Old Face&quot;;
+background-color: rgb(255, 255, 0);
+border-radius:10px
+}
+#pb
+{
+background-color:rgb(85, 255, 0)
+}</string>
+       </property>
+       <property name="text">
+        <string>.....</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="bck_btn">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>630</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#bck_btn
+{
+font: 14pt &quot;Baskerville Old Face&quot;;
+background-color: rgb(255, 255, 0);
+border-radius:10px
+}
+#bck_btn:hover
+{
+background-color:rgb(85, 255, 0)
+}</string>
+   </property>
+   <property name="text">
+    <string>Home</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>100</y>
+     <width>411</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Mongolian Baiti&quot;;
+color:rgb(255, 255, 255)</string>
+   </property>
+   <property name="text">
+    <string>Welcome to consumers Login and Signup panel.</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>230</y>
+     <width>421</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;Mongolian Baiti&quot;;
+color:rgb(255, 255, 255)</string>
+   </property>
+   <property name="text">
+    <string>Don't Have an account? Sign up for free!!</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>-70</y>
+     <width>201</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/img/img/lgo.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3"/>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

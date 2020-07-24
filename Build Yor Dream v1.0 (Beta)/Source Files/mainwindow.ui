@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>534</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Build Your Dream</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/img/img/icon.png</normaloff>:/img/img/icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#centralwidget
+{
+
+	border-image: url(:/img/img/WsZf3T.jpg);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-10</y>
+      <width>801</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#widget{
+	
+	border-image: url(:/img/img/header.jpg);
+
+}</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>100</y>
+       <width>511</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#label
+{
+font: 14pt &quot;Mongolian Baiti&quot;;
+color:rgb(0, 0, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string>A Software To Turn Your Dream Building Project To REALITY!!!</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>-20</y>
+       <width>191</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/img/img/lgo.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>180</y>
+      <width>641</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QWidget" name="widget_2" native="true">
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/img/img/apartment-building-icon-transparent_188101.png);</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSplitter" name="splitter">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <widget class="QPushButton" name="dev">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#dev
+
+{
+font: 14pt &quot;Baskerville Old Face&quot;;
+background-color: rgb(255, 255, 0);
+border-radius:4px
+}
+#dev:hover
+{
+background-color:rgb(85, 255, 0)
+}</string>
+        </property>
+        <property name="text">
+         <string>I am Developer</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="con">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#con
+{
+font: 14pt &quot;Baskerville Old Face&quot;;
+background-color: rgb(255, 255, 0);
+border-radius:4px
+}
+#con:hover
+{
+background-color:rgb(85, 255, 0)
+}</string>
+        </property>
+        <property name="text">
+         <string>I am a Consumer</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="temp">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#temp
+{
+font: 14pt &quot;Baskerville Old Face&quot;;
+background-color: rgb(255, 255, 0);
+border-radius:4px
+}
+#temp:hover
+{
+background-color:rgb(85, 255, 0)
+}</string>
+        </property>
+        <property name="text">
+         <string>Templates</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="exit">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#exit
+{
+font: 14pt &quot;Baskerville Old Face&quot;;
+background-color: rgb(255, 255, 0);
+border-radius:4px
+}
+#exit:hover
+{
+background-color:rgb(85, 255, 0)
+}</string>
+        </property>
+        <property name="text">
+         <string>Exit</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>exit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>602</x>
+     <y>464</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>602</x>
+     <y>509</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>con</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>481</x>
+     <y>295</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>727</x>
+     <y>308</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dev</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>475</x>
+     <y>203</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>465</x>
+     <y>154</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>temp</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>576</x>
+     <y>373</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>736</x>
+     <y>379</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
